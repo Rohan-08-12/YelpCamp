@@ -56,14 +56,6 @@ Run the app:
 npm start
 
 
-Visit the app in your browser:
-
-http://localhost:3000
-
-📸 Screenshots
-
-(Add screenshots or GIFs here to showcase the app — landing page, campground list, map view, etc.)
-
 🌟 Future Improvements
 
 Add a search and filter system for campgrounds
