@@ -29,7 +29,7 @@ const userRoutes=require("./routes/user");
 
 const app=express();
 
-const dbUrl=process.env.DB_URL;
+const dbUrl=process.env.DATABASE_URL || process.env.DB_URL;
 
 // const dbUrl="mongodb://localhost:27017/yelp_camp";
 
@@ -63,7 +63,7 @@ app.use(mongooseSanitize({
 // Session
 
 const store=new MongoDBStore({
-    url:dbUrl,
+    mongooseConnection:mongoose.connection,
     secret:"thisshouldbeabettersecret!",
     touchAfter:24*60*60
 });
