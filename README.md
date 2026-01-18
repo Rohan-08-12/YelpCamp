@@ -1,69 +1,135 @@
 🏕️ YelpCamp
 
-YelpCamp is a full-stack web application where users can create, review, and explore campgrounds. Built as part of the Colt Steele Web Development Bootcamp, this project demonstrates authentication, CRUD operations, and RESTful APIs in action.
+YelpCamp is a full-stack web application that allows users to discover, create, review, and manage campgrounds. The project demonstrates real-world web development concepts including authentication, authorization, CRUD operations, RESTful APIs, and cloud deployment.
+
+Originally built as part of Colt Steele’s Web Development Bootcamp, this version has been extended, configured, and deployed to production, showcasing end-to-end application ownership.
+
+🌐 Live Demo:
+👉 https://yelpcamp-3-5b0e.onrender.com/
 
 🚀 Features
 
-🔐 Authentication & Authorization – Secure login and registration with Passport.js
+🔐 Authentication & Authorization
+Secure user registration and login using Passport.js with protected routes.
 
-📝 CRUD Functionality – Create, read, update, and delete campgrounds and reviews
+📝 CRUD Functionality
+Create, read, update, and delete campgrounds and reviews.
 
-🌍 Interactive Maps – Campgrounds displayed with geolocation (Mapbox API integration)
+⭐ Reviews & Ratings
+Authenticated users can leave ratings and feedback on campgrounds.
 
-📸 Image Uploads – Store campground images using Cloudinary
+🌍 Interactive Maps
+Campgrounds are displayed using geolocation powered by the Mapbox API.
 
-⭐ Reviews & Ratings – Users can leave feedback and ratings for campgrounds
+📸 Image Uploads
+Campground images are uploaded and stored securely using Cloudinary.
 
-🎨 Responsive Design – Built with Bootstrap for mobile-friendly layouts
+🎨 Responsive Design
+Mobile-friendly UI built with Bootstrap.
 
 🛠️ Tech Stack
+Frontend
 
-Frontend: HTML, CSS, JavaScript, Bootstrap, EJS
+HTML
 
-Backend: Node.js, Express.js
+CSS
 
-Database: MongoDB, Mongoose
+JavaScript
 
-Authentication: Passport.js, bcrypt
+Bootstrap
 
-Other Services: Cloudinary (image storage), Mapbox (maps integration)
+EJS (Server-side templating)
 
-📦 Installation
+Backend
 
-Clone the repo:
+Node.js
 
+Express.js
+
+Database
+
+MongoDB
+
+Mongoose
+
+Authentication & Security
+
+Passport.js
+
+express-session
+
+bcrypt
+
+Helmet
+
+MongoDB-backed session store
+
+Cloud & APIs
+
+MongoDB Atlas
+
+Cloudinary (image storage)
+
+Mapbox (maps & geolocation)
+
+Render (deployment)
+
+📦 Local Setup
+1️⃣ Clone the repository
 git clone https://github.com/Rohan-08-12/YelpCamp.git
 cd YelpCamp
 
-
-Install dependencies:
-
+2️⃣ Install dependencies
 npm install
 
+3️⃣ Environment variables
 
-Create a .env file with your environment variables:
+Create a .env file in the project root:
 
-DATABASE_URL=<your-mongodb-uri>
-CLOUDINARY_CLOUD_NAME=<your-cloud-name>
-CLOUDINARY_KEY=<your-cloud-key>
-CLOUDINARY_SECRET=<your-cloud-secret>
-MAPBOX_TOKEN=<your-mapbox-token>
-SESSION_SECRET=<your-secret>
+DATABASE_URL=your_mongodb_connection_string
+SESSION_SECRET=your_session_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+CLOUDINARY_KEY=your_cloudinary_key
+CLOUDINARY_SECRET=your_cloudinary_secret
+MAPBOX_TOKEN=your_mapbox_token
 
 
-Run the app:
+⚠️ Important: Never commit .env files to GitHub.
 
+4️⃣ Run the application
 npm start
 
 
-🌟 Future Improvements
+Then open:
 
-Add a search and filter system for campgrounds
+http://localhost:3000
 
-Enable “favorites” so users can bookmark campgrounds
+🌟 Future Enhancements
 
-Implement notifications for user activity
+Search and filtering for campgrounds
+
+Favorites / bookmarking feature
+
+User activity notifications
+
+Pagination and advanced sorting
+
+Performance and accessibility improvements
 
 🤝 Contributing
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+Contributions are welcome!
+
+Fork the repository
+
+Create a feature branch
+
+Submit a pull request with a clear description
+
+For major changes, please open an issue first to discuss your proposal.
+
+📄 Acknowledgements
+
+Colt Steele – Original project concept from The Web Developer Bootcamp
+
+MongoDB, Cloudinary, Mapbox, and Render for their developer-friendly platforms
